@@ -6,8 +6,8 @@
 
 	<groupId>com.layso.web-quiz-core</groupId>
 	<artifactId>web-quiz-core</artifactId>
-	
-	
+
+
 	<parent>
 		<groupId>com.layso.web-quiz-parent</groupId>
 		<artifactId>web-quiz-parent</artifactId>
@@ -19,4 +19,13 @@
 		<maven.compiler.source>1.8</maven.compiler.source>
 		<maven.compiler.target>1.8</maven.compiler.target>
 	</properties>
+
+
+	<dependencies>
+		<dependency>
+			<groupId>org.hibernate.javax.persistence</groupId>
+			<artifactId>hibernate-jpa-2.1-api</artifactId>
+			<version>1.0.0.Final</version>
+		</dependency>
+	</dependencies>
 </project>
