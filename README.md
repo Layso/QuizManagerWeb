@@ -1,5 +1,5 @@
 # QuizManagerWeb
-Project for Advanced Java lecture on EPITA
+Project for Advanced Java lecture on EPITA. This is the continuation lecture of Java Fundemantals. Project is similar to the first one but this time as a web service to understand basics of JEE. Learning Maven and Angular to build a web project was the aim of the course. Core java projects are continuation of course works, can be found here: https://github.com/thomasbroussard/2019s1adv
 
 # Setting Up
 There are some preconditions to be followed to run the program without problems
