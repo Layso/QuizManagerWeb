@@ -1,0 +1,76 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Welcome to {{ title }}!
+  </h1>
+</div>
+<hr>
+
+<h3>Instructions</h3>
+<ul>
+    <li>Default base link for Java servlet is http://localhost:8080/quiz-rest-services/rest/quiz/. But if it is not or you see "Please update base URL for REST service" error please update the base URL with correct port and extensions</li>
+    <hr>
+    <li><b>Search Quiz</b> searches all quizzes that has a <b>name match</b> with given search parameter</li>
+    <hr>
+    <li>If you click a quiz on search results, it will prepare <b>Quiz Solve</b> section</li>
+    <hr>
+    <li>To create a quiz you <b>need to fill</b> quiz name, user nick and <b>have</b> at least 1 saved question on <b>Create Quiz</b> section</li>
+    <hr>
+    <li>To save a question you <b>need to fill</b> content and all 4 choices</li>
+    <hr>
+    <li>If you fill a question but don't save, it <b>will not</b> be included in the quiz</li>
+    <hr>
+    <li>You <b>can't</b> create a quiz with an already existing name</li>
+    <hr>
+    <li>To delete a quiz on <b>Delete Quiz</b> section you need to give correct quiz name and nick of owner (low level protection simulation)</li>
+</ul>
+
+
+
+
+<h3>URL Update</h3>
+<table>
+  <tr>
+    <td>
+      <form>
+        <input [(ngModel)]="newUrl" name="newUrl" />
+      </form>
+    </td>
+    <td>
+      <button (click) = "update()"><label>Update URL</label></button>
+    </td>
+    <td>
+      <button (click) = "reset()"><label>Reset to Default</label></button>
+    </td>
+  </tr>
+</table>
+<p>Ex (default): http://localhost:8080/quiz-rest-services/rest/quiz/</p>
+
+<hr>
+<table>
+  <tr>
+    <th><p style="font-size: 30px">Search Quiz</p></th>
+    <th><p style="font-size: 30px">Solve Quiz</p></th>
+    <th><p style="font-size: 30px">Create Quiz</p></th>
+    <th><p style="font-size: 30px">Delete Quiz</p></th>
+  </tr>
+  <tr>
+    <td>
+      <app-quiz-list></app-quiz-list>
+    </td>
+    <td>
+      <app-quiz-solve></app-quiz-solve>
+    </td>
+    <td>
+      <app-quiz-create></app-quiz-create>
+    </td>
+    <td>
+      <app-quiz-delete></app-quiz-delete>
+    </td>
+  </tr>
+</table>
+
+<hr>
+
+
+<router-outlet></router-outlet>
